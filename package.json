@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "docker:build": "sudo docker build -t compute-engine-gcp-frontend .",
+    "docker:run": "sudo docker run --rm --name compute-engine-gcp-frontend -dp 80:80 compute-engine-gcp-frontend"
   },
   "private": true,
   "dependencies": {
